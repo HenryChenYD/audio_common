@@ -182,8 +182,8 @@ class soundtype:
         position = 0
         duration = 0
         try:
-            position = self.sound.query_position(Gst.Format.TIME)[0]
-            duration = self.sound.query_duration(Gst.Format.TIME)[0]
+            position = self.sound.query_position(Gst.Format.TIME)
+            duration = self.sound.query_duration(Gst.Format.TIME)
         except Exception as e:
             position = 0
             duration = 0
