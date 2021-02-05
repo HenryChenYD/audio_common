@@ -2,6 +2,12 @@
 Changelog for package sound_play
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.3.10 (2021-01-07)
+-------------------
+
+0.3.9 (2020-10-22)
+------------------
+
 0.3.8 (2020-09-13)
 ------------------
 * Merge pull request `#155 <https://github.com/ros-drivers/audio_common/issues/155>`_ from garaemon/use-myargv
