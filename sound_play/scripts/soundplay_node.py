@@ -192,6 +192,9 @@ class soundtype:
 
         if position != duration:
             self.staleness = 0
+        elif self.state == self.LOOPING:
+            self.sound.seek_simple(Gst.Format.TIME, Gst.SeekFlags.FLUSH, 0)
+            self.sound.set_state(Gst.State.PLAYING)
         else:
             self.staleness = self.staleness + 1
         return self.staleness
